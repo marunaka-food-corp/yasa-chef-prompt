@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1>aaaa</h1>
+    <h1>やさシェフ / プロンプト作成補助</h1>
+    <p>WIP</p>
   </div>
 </template>
 
