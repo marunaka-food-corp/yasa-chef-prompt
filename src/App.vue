@@ -2,6 +2,10 @@
   <div>
     <h1>やさシェフ / プロンプト作成補助</h1>
     <form @submit.prevent="generate">
+      <div>
+        <label for="ingredients">食材を指定する：&nbsp;</label>
+        <input v-model="item.ingredients" id="ingredients" placeholder="" />
+      </div>
       <button type="submit">プロンプト作成</button>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
@@ -41,12 +45,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-left: 60px;
 }
 
 .generated-prompt {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 button {
