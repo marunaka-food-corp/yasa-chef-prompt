@@ -30,8 +30,16 @@ export default {
   },
   methods: {
     generate() {
-      let p = '高齢者施設向けの献立を提案してください。'
-      this.generatedPrompt = p
+      let ingredients = ''
+      if (this.item.ingredients) {
+        ingredients = `${this.item.ingredients}を使用してください。`
+      } else {
+        ingredients = '指定する食材はありません。'
+      }
+
+      this.generatedPrompt = `高齢者施設向けの献立を提案してください。
+
+${ingredients}`
     },
     copy() {
       navigator.clipboard.writeText(this.generatedPrompt)
