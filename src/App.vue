@@ -11,6 +11,7 @@
     <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
       <br />
+      <button @click="copy" style="margin-right: 10px;">コピー</button>
       <button @click="clear">クリア</button>
     </div>
   </div>
@@ -31,6 +32,9 @@ export default {
     generate() {
       let p = '高齢者施設向けの献立を提案してください。'
       this.generatedPrompt = p
+    },
+    copy() {
+      navigator.clipboard.writeText(this.generatedPrompt)
     },
     clear() {
       this.generatedPrompt = ''
