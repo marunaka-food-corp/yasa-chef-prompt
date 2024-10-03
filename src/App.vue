@@ -1,10 +1,14 @@
 <template>
   <div>
     <h1>やさシェフ / プロンプト作成補助</h1>
-    <p>WIP</p>
+    <form @submit.prevent="generate">
+      <button type="submit">作成</button>
+    </form>
     <div v-if="generatedPrompt">
       <h4>プロンプト</h4>
       <textarea v-model="generatedPrompt" readonly></textarea>
+      <br />
+      <button @click="clear">クリア</button>
     </div>
   </div>
 </template>
@@ -17,7 +21,7 @@ export default {
       item: {
         ingredients: '',
       },
-      generatedPrompt: 'aaaaa'
+      generatedPrompt: ''
     }
   },
   methods: {
