@@ -4,7 +4,7 @@
     <form @submit.prevent="generate">
       <div>
         <label for="ingredients">食材を指定する：&nbsp;</label>
-        <input v-model="item.ingredients" id="ingredients" placeholder="" />
+        <input v-model="item.ingredients" id="ingredients" placeholder="任意" />
       </div>
       <button type="submit">プロンプト作成</button>
     </form>
@@ -29,7 +29,8 @@ export default {
   },
   methods: {
     generate() {
-      this.generatedPrompt = `aaaaa`
+      let p = '高齢者施設向けの献立を提案してください。'
+      this.generatedPrompt = p
     },
     clear() {
       this.generatedPrompt = ''
