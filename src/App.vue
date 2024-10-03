@@ -45,6 +45,7 @@ ${ingredients}`
       navigator.clipboard.writeText(this.generatedPrompt)
     },
     clear() {
+      this.item.ingredients = ''
       this.generatedPrompt = ''
     }
   }
