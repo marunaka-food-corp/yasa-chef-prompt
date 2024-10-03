@@ -4,8 +4,7 @@
     <form @submit.prevent="generate">
       <button type="submit">作成</button>
     </form>
-    <div v-if="generatedPrompt">
-      <h4>プロンプト</h4>
+    <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
       <br />
       <button @click="clear">クリア</button>
@@ -43,6 +42,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.generated-prompt {
+  margin-top: 100px;
+}
+
+button {
+  margin-top: 10px;
 }
 
 textarea {
