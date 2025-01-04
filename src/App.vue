@@ -25,7 +25,7 @@
         </select>
       </div>
       <button type="submit" style="margin-right: 10px;">プロンプト作成</button>
-      <button @click="inputSampleData">サンプルデータを入力</button>
+      <button type="button" @click="inputSampleData">サンプルデータを入力</button>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
