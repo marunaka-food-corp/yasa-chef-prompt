@@ -3,7 +3,7 @@
     <h1>やさシェフ / プロンプト作成補助</h1>
     <form @submit.prevent="generate" class="card">
       <div class="form-group">
-        <label for="ingredients">食材：</label>
+        <label for="ingredients">食材:</label>
         <input v-model="item.ingredients" id="ingredients" placeholder="任意" />
       </div>
       <div class="form-group">
