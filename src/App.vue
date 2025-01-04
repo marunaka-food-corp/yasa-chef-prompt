@@ -24,7 +24,8 @@
           <option value="冬">冬</option>
         </select>
       </div>
-      <button type="submit">プロンプト作成</button>
+      <button type="submit" style="margin-right: 10px;">プロンプト作成</button>
+      <button @click="inputSampleData">サンプルデータを入力</button>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
@@ -76,6 +77,8 @@ export default {
       }
 
       this.generatedPrompt = prompt
+    },
+    inputSampleData() {
     },
     copy() {
       navigator.clipboard.writeText(this.generatedPrompt)
