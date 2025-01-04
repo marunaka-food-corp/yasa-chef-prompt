@@ -176,7 +176,12 @@ button.primary {
 
 textarea {
   resize: vertical;
-  width: 600px;
-  height: 150px;
+  width: 100%;
+  min-height: 120px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 </style>
