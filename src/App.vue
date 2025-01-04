@@ -54,24 +54,24 @@ export default {
       let prompt = '高齢者施設向けの献立を提案してください。\n\n'
       // 食材
       if (this.item.ingredients) {
-        prompt += `${this.item.ingredients}をメインの食材として使用してください。\n`
+        prompt += `・${this.item.ingredients}をメインの食材として使用してください。\n`
       } else {
-        prompt += '食材の指定はありません。\n'
+        prompt += '・食材の指定はありません。\n'
       }
 
       // アレルギー
       if (this.item.allergies) {
-        prompt += `${this.item.allergies}\n`
+        prompt += `・${this.item.allergies}\n`
       }
 
       // 調理時間
       if (this.item.cookTime) {
-        prompt += `${this.item.cookTime}\n`
+        prompt += `・${this.item.cookTime}\n`
       }
 
       // 季節
       if (this.item.season) {
-        prompt += `${this.item.season}\n`
+        prompt += `・${this.item.season}\n`
       }
 
       this.generatedPrompt = prompt
