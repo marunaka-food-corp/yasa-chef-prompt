@@ -3,7 +3,7 @@
     <h1>やさシェフ / プロンプト作成補助</h1>
     <form @submit.prevent="generate">
       <div>
-        <label for="ingredients">食材を指定する：&nbsp;</label>
+        <label for="ingredients">食材：&nbsp;</label>
         <input v-model="item.ingredients" id="ingredients" placeholder="任意" />
       </div>
       <button type="submit">プロンプト作成</button>
