@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <h1>やさシェフ / プロンプト作成補助</h1>
     <form @submit.prevent="generate">
       <div>
@@ -98,13 +98,13 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: left;
   color: #2c3e50;
-  margin-top: 30px;
-  margin-left: 60px;
+  margin: 30px auto;
+  max-width: 700px;
 }
 
 .generated-prompt {
