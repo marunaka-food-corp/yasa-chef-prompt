@@ -16,6 +16,13 @@
       </div>
       <div>
         <label for="season">季節:&nbsp;</label>
+        <select v-model="item.season">
+          <option value="">季節を選択</option>
+          <option value="春">春</option>
+          <option value="夏">夏</option>
+          <option value="秋">秋</option>
+          <option value="冬">冬</option>
+        </select>
       </div>
       <button type="submit">プロンプト作成</button>
     </form>
@@ -37,6 +44,7 @@ export default {
         ingredients: '',
         allergies: '',
         cookTime: null,
+        season: '',
       },
       generatedPrompt: ''
     }
