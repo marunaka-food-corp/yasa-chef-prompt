@@ -52,11 +52,21 @@ export default {
   methods: {
     generate() {
       let prompt = '高齢者施設向けの献立を提案してください。\n\n'
+      // 食材
       if (this.item.ingredients) {
         prompt += `${this.item.ingredients}を使用してください。\n`
       } else {
         prompt += '食材の指定はありません。\n'
       }
+
+      // アレルギー
+      if (this.item.allergies) {}
+
+      // 調理時間
+      if (this.item.cookTime) {}
+
+      // 季節
+      if (this.item.season) {}
 
       this.generatedPrompt = prompt
     },
