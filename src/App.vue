@@ -175,9 +175,10 @@ button.primary {
 }
 
 textarea {
+  box-sizing: border-box;
   resize: vertical;
   width: 100%;
-  min-height: 120px;
+  min-height: 140px;
   font-size: 1rem;
   padding: 0.5rem;
   margin-bottom: 0.8rem;
