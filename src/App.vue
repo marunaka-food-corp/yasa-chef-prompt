@@ -11,7 +11,7 @@
         <input v-model="item.allergies" id="allergies" placeholder="任意" />
       </div>
       <div>
-        <label for="cookTime">調理時間(分):&nbsp;</label>
+        <label for="cookTime">調理時間 (min):&nbsp;</label>
         <input type="number" v-model.number="item.cookTime" id="cookTime" placeholder="任意" />
       </div>
       <div>
