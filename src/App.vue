@@ -24,14 +24,17 @@
           <option value="冬">冬</option>
         </select>
       </div>
-      <button type="submit" style="margin-right: 10px;">プロンプト作成</button>
-      <button type="button" @click="inputSampleData">サンプルデータを入力</button>
+      <div class="button-row">
+        <button type="submit" style="margin-right: 10px;">プロンプト作成</button>
+        <button type="button" @click="inputSampleData">サンプルデータを入力</button>
+      </div>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
-      <br />
-      <button @click="copy" style="margin-right: 10px;">コピー</button>
-      <button @click="clear">クリア</button>
+      <div class="button-row">
+        <button @click="copy" style="margin-right: 10px;">コピー</button>
+        <button @click="clear">クリア</button>
+      </div>
     </div>
   </div>
 </template>
