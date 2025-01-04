@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app-container">
     <h1>やさシェフ / プロンプト作成補助</h1>
     <form @submit.prevent="generate" class="card">
       <div class="form-group">
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style scoped>
-#app {
+#app-container {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   text-align: left;
   color: #2c3e50;
