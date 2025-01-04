@@ -174,10 +174,6 @@ button.primary {
   border-radius: 8px;
 }
 
-button {
-  margin-top: 10px;
-}
-
 textarea {
   resize: vertical;
   width: 600px;
