@@ -81,6 +81,9 @@ export default {
     },
     clear() {
       this.item.ingredients = ''
+      this.item.allergies = ''
+      this.item.cookTime = null
+      this.item.season = ''
       this.generatedPrompt = ''
     }
   }
