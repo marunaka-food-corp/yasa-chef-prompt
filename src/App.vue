@@ -110,6 +110,18 @@ export default {
   max-width: 700px;
 }
 
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
 .generated-prompt {
   margin-top: 60px;
 }
