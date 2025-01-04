@@ -61,17 +61,17 @@ export default {
 
       // アレルギー
       if (this.item.allergies) {
-        prompt += `・${this.item.allergies}\n`
+        prompt += `・アレルギーのため、${this.item.allergies}を使用しないでください\n`
       }
 
       // 調理時間
       if (this.item.cookTime) {
-        prompt += `・${this.item.cookTime}\n`
+        prompt += `・調理時間は、${this.item.cookTime}分以内を想定してください\n`
       }
 
       // 季節
       if (this.item.season) {
-        prompt += `・${this.item.season}\n`
+        prompt += `・喫食する季節として、${this.item.season}を想定してください\n`
       }
 
       this.generatedPrompt = prompt
