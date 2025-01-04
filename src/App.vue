@@ -6,6 +6,15 @@
         <label for="ingredients">食材：&nbsp;</label>
         <input v-model="item.ingredients" id="ingredients" placeholder="任意" />
       </div>
+      <div>
+        <label for="allergies">アレルギー:&nbsp;</label>
+      </div>
+      <div>
+        <label for="cookTime">調理時間(分):&nbsp;</label>
+      </div>
+      <div>
+        <label for="season">季節:&nbsp;</label>
+      </div>
       <button type="submit">プロンプト作成</button>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
