@@ -54,7 +54,7 @@ export default {
       let prompt = '高齢者施設向けの献立を提案してください。\n\n'
       // 食材
       if (this.item.ingredients) {
-        prompt += `${this.item.ingredients}を使用してください。\n`
+        prompt += `${this.item.ingredients}をメインの食材として使用してください。\n`
       } else {
         prompt += '食材の指定はありません。\n'
       }
