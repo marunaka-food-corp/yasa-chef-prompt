@@ -25,14 +25,14 @@
         </select>
       </div>
       <div class="button-row">
-        <button type="submit" style="margin-right: 10px;">プロンプト作成</button>
+        <button type="submit" class="primary">プロンプト作成</button>
         <button type="button" @click="inputSampleData">サンプルデータを入力</button>
       </div>
     </form>
     <div v-if="generatedPrompt" class="generated-prompt">
       <textarea v-model="generatedPrompt" readonly></textarea>
       <div class="button-row">
-        <button @click="copy" style="margin-right: 10px;">コピー</button>
+        <button @click="copy" class="primary">コピー</button>
         <button @click="clear">クリア</button>
       </div>
     </div>
