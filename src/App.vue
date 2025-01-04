@@ -122,6 +122,33 @@ h1 {
   border-radius: 8px;
 }
 
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  width: 130px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
 .generated-prompt {
   margin-top: 60px;
 }
