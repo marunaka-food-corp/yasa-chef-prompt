@@ -79,6 +79,10 @@ export default {
       this.generatedPrompt = prompt
     },
     inputSampleData() {
+      this.item.ingredients = '鶏肉'
+      this.item.allergies = '乳製品'
+      this.item.cookTime = 20
+      this.item.season = '冬'
     },
     copy() {
       navigator.clipboard.writeText(this.generatedPrompt)
