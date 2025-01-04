@@ -53,9 +53,9 @@ export default {
     generate() {
       let prompt = '高齢者施設向けの献立を提案してください。\n\n'
       if (this.item.ingredients) {
-        prompt += `${this.item.ingredients}を使用してください。`
+        prompt += `${this.item.ingredients}を使用してください。\n`
       } else {
-        prompt += '指定する食材はありません。'
+        prompt += '食材の指定はありません。\n'
       }
 
       this.generatedPrompt = prompt
