@@ -60,13 +60,19 @@ export default {
       }
 
       // アレルギー
-      if (this.item.allergies) {}
+      if (this.item.allergies) {
+        prompt += `${this.item.allergies}\n`
+      }
 
       // 調理時間
-      if (this.item.cookTime) {}
+      if (this.item.cookTime) {
+        prompt += `${this.item.cookTime}\n`
+      }
 
       // 季節
-      if (this.item.season) {}
+      if (this.item.season) {
+        prompt += `${this.item.season}\n`
+      }
 
       this.generatedPrompt = prompt
     },
