@@ -1,21 +1,21 @@
 <template>
   <div id="app">
     <h1>やさシェフ / プロンプト作成補助</h1>
-    <form @submit.prevent="generate">
-      <div>
-        <label for="ingredients">食材：&nbsp;</label>
+    <form @submit.prevent="generate" class="card">
+      <div class="form-group">
+        <label for="ingredients">食材：</label>
         <input v-model="item.ingredients" id="ingredients" placeholder="任意" />
       </div>
-      <div>
-        <label for="allergies">アレルギー:&nbsp;</label>
+      <div class="form-group">
+        <label for="allergies">アレルギー:</label>
         <input v-model="item.allergies" id="allergies" placeholder="任意" />
       </div>
-      <div>
-        <label for="cookTime">調理時間 (min):&nbsp;</label>
+      <div class="form-group">
+        <label for="cookTime">調理時間 (min):</label>
         <input type="number" v-model.number="item.cookTime" id="cookTime" placeholder="任意" />
       </div>
-      <div>
-        <label for="season">季節:&nbsp;</label>
+      <div class="form-group">
+        <label for="season">季節:</label>
         <select v-model="item.season">
           <option value="">季節を選択</option>
           <option value="春">春</option>
