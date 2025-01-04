@@ -8,9 +8,11 @@
       </div>
       <div>
         <label for="allergies">アレルギー:&nbsp;</label>
+        <input v-model="item.allergies" id="allergies" placeholder="任意" />
       </div>
       <div>
         <label for="cookTime">調理時間(分):&nbsp;</label>
+        <input type="number" v-model.number="item.cookTime" id="cookTime" placeholder="任意" />
       </div>
       <div>
         <label for="season">季節:&nbsp;</label>
@@ -33,6 +35,8 @@ export default {
     return {
       item: {
         ingredients: '',
+        allergies: '',
+        cookTime: null,
       },
       generatedPrompt: ''
     }
